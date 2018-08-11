@@ -8,6 +8,9 @@
 # Code developed by R.A. Posthumus, with many thanks to @datagraver
 
 #library that are needed 
+
+devtools::install_github('thomasp85/gganimate')
+
 library(dplyr)
 library(ggplot2)
 library(gganimate)
@@ -15,6 +18,7 @@ library(lubridate)
 library(magick)
 library(readr)
 library(tidyverse)
+library(stringr)
 
 #some global constants
 max_temp <- 20 #set temp cutoff for warm days
@@ -370,3 +374,4 @@ make_the_plots(
   make_restricted_plot = TRUE ,
   make_animation = TRUE
 )
+
